@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background: #1992D4;
+    color: white;
+    width: 30%;
+    height: 100%;
+}
+
+.sidebar .dashboardandIcon {
+    display: flex;
+    gap: 1rem;
+}
+
+.dashboard {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+}
+
+.sidebar h1 {
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 2rem;
+}
+
+h2 {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.homeandIcon {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+}
+
+.home {
+    width: 2rem;
+    height: 37px;
+}
