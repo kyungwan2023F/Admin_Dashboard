@@ -1,14 +1,19 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+}
+
 .sidebar {
     background: #1992D4;
     color: white;
-    width: 20%;
+    width: 25%;
     height: 100%;
 }
 
@@ -19,6 +24,7 @@ html, body {
 
 .dashboardandIcon {
     margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 .dashboard {
@@ -30,7 +36,7 @@ html, body {
 .sidebar h1 {
     margin: 0;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
@@ -152,4 +158,113 @@ a {
 .privacyIcon {
     width: 2rem;
     height: 37px;
+}
+
+.headerandContent {
+    width: 75%;
+}
+
+.header {
+    padding-bottom: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.top_header {
+    display: flex;
+    gap: 2rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f3f4f6;
+    border-radius: 30px;
+    padding: 0.25rem 1rem;
+    width: 50%;
+    margin-left: 7rem;
+    margin-top: 1.75rem;
+}
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.25rem;
+    background-color: transparent;
+}
+
+.notificationButton {
+    margin-top: 1.75rem;
+    margin-left: 8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.notificationIcon {
+    width: 2rem;
+    height: 37px;
+}
+
+.profileButton {
+    margin-top: 1.75rem;
+    background: rgb(255, 230, 0);
+    border: 2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profileIcon {
+    width: 2rem;
+    height: 37px;
+}
+
+.header span {
+    margin-top: 2.5rem;
+    font-size: 1.25rem; 
+    font-weight: bold; 
+    color: #111827; 
+}
+
+.bottom_header {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.bottom_header .profileIcon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgb(255, 230, 0);
+    margin-left: 5rem;
+}
+
+.profile-text p {
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.profile-text h2 {
+    color: black;
+}
+
+.button-group {
+    display: flex; 
+    gap: 2rem; 
+    align-items: center;
+    margin-left: 29rem;
+}
+
+.action-button {
+    background-color: #1992D4;
+    color: #ffffff;
+    padding: 0.6rem 1.5rem;
+    width: 6rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
 }
