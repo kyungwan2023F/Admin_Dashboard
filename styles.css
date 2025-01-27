@@ -13,7 +13,7 @@ body {
 .sidebar {
     background: #1992D4;
     color: white;
-    width: 25%;
+    width: 20%;
     height: 100%;
 }
 
@@ -163,7 +163,7 @@ a {
 .headerandContent {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 80%;
 }
 
 .header {
@@ -258,7 +258,7 @@ input {
     display: flex;
     gap: 2rem;
     align-items: center;
-    margin-left: 29rem;
+    margin-left: 33rem;
 }
 
 .action-button {
@@ -276,6 +276,7 @@ input {
 .content_area {
     flex: 1;
     background-color: #E2E8F0;
+    display: flex;
 }
 
 .content_area h2 {
@@ -285,11 +286,15 @@ input {
     margin-top: 2rem;
 }
 
+.content_area .project_content {
+    width: 65%;
+}
+
 .content_area .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 430px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
     gap: 1.5rem;
-    width: 70%;
+    width: 100%;
     margin-left: 2rem;
     margin-top: 1rem;
 }
@@ -298,7 +303,23 @@ input {
     background-color: #FFFFFF;
     color: black;
     text-align: center;
-    height: 170px;
+    height: 190px;
     border-radius: 8px;
     border-left: 8px solid #F0B429;
+}
+
+.icon_container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-left: 20rem;
+}
+
+.icon_container img {
+    width: 1.7rem;
+    height: 34px;
+}
+
+.announcements-trending {
+    width: 35%;
 }
