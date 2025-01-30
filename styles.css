@@ -8,13 +8,15 @@ body {
 
 body {
     display: flex;
+    align-items: stretch; 
+    height: auto;
 }
 
 .sidebar {
     background: #1992D4;
     color: white;
     width: 20%;
-    height: 100%;
+    height: auto;
 }
 
 .sidebar .dashboardandIcon {
@@ -164,6 +166,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 80%;
+    flex-grow: 1;
 }
 
 .header {
@@ -297,21 +300,28 @@ input {
     width: 100%;
     margin-left: 2rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .card {
     background-color: #FFFFFF;
     color: black;
     text-align: center;
-    height: 190px;
+    height: 230px;
     border-radius: 8px;
     border-left: 8px solid #F0B429;
 }
 
+.card:hover {
+    transition: 0.5s;
+    background-color: #F0B429;
+}
+
+
 .icon_container {
     display: flex;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-left: 20rem;
 }
 
@@ -322,4 +332,87 @@ input {
 
 .announcements-trending {
     width: 35%;
+    display: flex;
+    flex-direction: column;
 }
+
+.announcements-trending h2 {
+    margin-left: 0.5rem;
+}
+
+.announcements-card {
+    background-color: #FFFFFF;
+    margin-left: 0.5rem;
+    height: 240px;
+    width: 380px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 1rem;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.announcements-card h3.first {
+    margin-top: 0px;
+}
+
+.announcements-card h3 {
+    margin-bottom: 0px;
+}
+
+.announcements-card p {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    margin-top: 3px;
+}
+
+.announcements-card p.last {    
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.trending-card {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    background-color: #FFFFFF;
+    height: 304px;
+    width: 444px;
+    border-radius: 8px;
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.trend-item {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.trend-item .profileIcon {
+    width: 2rem;
+}
+
+.trend-item .profileButton {
+    margin-top: 0.5rem;
+}
+
+.trend-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.trend-text p {
+    margin: 0px;
+}
+
+p.username {
+    margin-top: 0.5rem;
+}
+
+.trend-item:nth-child(5) {
+    margin-bottom: 1rem; 
+}
+
+
